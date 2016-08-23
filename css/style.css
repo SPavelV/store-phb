@@ -8,11 +8,12 @@
 .main-page .page-header {
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
   border-bottom: 2px solid #ebebeb;
-  -webkit-box-shadow: 0 10px 5px rgba(235,235,235,.09);
-  -moz-box-shadow: 0 10px 5px rgba(235,235,235,.09);
-  -ms-box-shadow: 0 10px 5px rgba(235,235,235,.09);
-  -o-box-shadow: 0 10px 5px rgba(235,235,235,.09);
+  -webkit-box-shadow: 3px 3px 10px rgba(235,235,235,.9);
+  -moz-box-shadow: 3px 3px 10px rgba(235,235,235,.9);
+  -ms-box-shadow: 3px 3px 10px rgba(235,235,235,.9);
+  -o-box-shadow: 3px 3px 10px rgba(235,235,235,.9);
   box-shadow: 3px 3px 10px rgba(235,235,235,.9);
 }
 
@@ -154,6 +155,7 @@
 
 .page-contact__mode,
 .page-phone__number {
+  padding-left: 24px;
   font-size: 1.24em;
 }
 
