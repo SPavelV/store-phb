@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <title>Товары для здоровья и красоты в Ижевске</title>
 </head>
 <body class="main-page">
@@ -95,7 +97,70 @@
     </div>
   </header>
   <main class="page-content">
-    <section class="page-slider">
+    <div class="page-slider visible-lg visible-md">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"  ></l  i>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/slide1.jpg" alt="Развела руками">
+            <div class="page-slider__caption carousel-caption">
+              <h3>Спецпредложение</h3>
+              <p class="page-slider__special-offers">
+                Пройдите 10 бесплатных
+                сеансов на нашем
+                оборудовании
+              </p>
+              <div class="page-slider__inner">
+                <div class="page-slider__left-col">
+                  <ul class="page-slider__list">
+                    <li>Массажное оборудование</li>
+                    <li>Тепловые матрасы</li>
+                    <li>Аппараты для коррекции веса</li>
+                    <li>Прессотерапия</li>
+                  </ul>
+                </div>
+                <div class="page-slider__right-col">
+                  <ul class="page-slider__list">
+                    <li>Массажное оборудование</li>
+                    <li>Тепловые матрасы</li>
+                    <li>Аппараты для коррекции веса</li>
+                    <li>Прессотерапия</li>
+                  </ul>
+                </div>
+                <div class="page-slider__btn-catalog">
+                  <a href="/">Перейти в каталог</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide2.jpg" alt="Развела руками">
+            <div class="page-slider__caption carousel-caption">
+              <h3>Спецпредложение</h3>
+              <p class="page-slider__special-offers">
+                Пройдите 10 бесплатных
+                сеансов на нашем
+                оборудовании
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <div class="page-slider">
       <div class="page-slider__wrapper container">
         <p class="page-slider__special-offers">
           Пройдите 10 бесплатных
@@ -124,10 +189,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
   <script src="js/bootstrap.min.js">
-
   </script>
 </body>
 </html>
