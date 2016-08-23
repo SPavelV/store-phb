@@ -7,6 +7,13 @@
 
 .main-page .page-header {
   margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #ebebeb;
+  -webkit-box-shadow: 0 10px 5px rgba(235,235,235,.09);
+  -moz-box-shadow: 0 10px 5px rgba(235,235,235,.09);
+  -ms-box-shadow: 0 10px 5px rgba(235,235,235,.09);
+  -o-box-shadow: 0 10px 5px rgba(235,235,235,.09);
+  box-shadow: 3px 3px 10px rgba(235,235,235,.9);
 }
 
 .page-header__top-bar {
@@ -205,7 +212,6 @@
 
 .page-basket__total-price-btn:a::before {
   color: #adadad;
-
 }
 
 .page-basket__ammount {
@@ -227,6 +233,7 @@
 }
 
 .main-nav {
+  margin-bottom: 0;
   background: #fff;
   border: 0;
   -webkit-border-radius: 0;
@@ -265,8 +272,10 @@
   background: #fff;
 }
 
-.page-header__nav-wrap>.navbar-default .navbar-nav>.main-nav__active-item>a {
+.page-header__nav-wrap>.navbar-default .navbar-nav>.main-nav__active-item>a,
+.page-header__nav-wrap>.navbar-default .navbar-nav>.main-nav__active-item>a:focus,
+.page-header__nav-wrap>.navbar-default .navbar-nav>.main-nav__active-item>a:hover {
   background: #fff;
-  color: #484848;
+  color: #e65e63;
   border-color: #e65e63;
 }
