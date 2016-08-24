@@ -283,7 +283,107 @@
 }
 
 .page-slider__caption {
-  margin-bottom: 0;
+  top: 30px;
+  padding-left: 40px;
   text-align: left;
-  background-color: rgba(255,255,255,.6);
+  background: rgba(255,255,255,.5);
+}
+
+.page-slider__caption h3 {
+  font-size: 2.142em;
+  color: #3c1b5f;s
+  text-transform: uppercase;
+}
+
+.page-slider__caption p {
+  font-size: 0.92857;
+  color: #5d128a;
+  font-style: italic;
+}
+
+.page-slider__list {
+  padding-left: 30px;
+  font-size: 1.142857em;
+  color: #5d128a;
+  list-style: none;
+}
+
+.page-slider__list li {
+  position: relative;
+  line-height: 2.4em;
+}
+
+.page-slider__list li::before {
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  display: block;
+  content: "\e013";
+  top: -1px;
+  left: -30px;
+  color: #26a831;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.142857em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+.page-slider__btn-catalog,
+.page-slider__btn-catalog:focus {
+  background: #4d4d4d;
+  color: #fff;
+  font-size: 1.42857em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.page-slider__btn-catalog:hover {
+  background: #2e1738;
+  color: #fff;
+}
+
+.page-slider__btn-catatlog:active {
+  background: #242222;
+  color: #fff;
+}
+
+.store-services__item-list {
+  list-style-type: none;
+}
+
+.store-services__item-btn {
+  position: relative;
+  display: block;
+  min-width: 94px;
+  padding-left: 83px;
+  background: #72c679;
+  color: #fff;
+}
+
+.store-services__item-btn--inner-shape {
+  position: relative;
+  display: block;
+  padding-left: 83px;
+  background: #e86e72;
+  color: #fff;
+}
+
+.store-services__item-btn::before,
+.store-services__item-btn--inner-shape::before {
+  content: "";
+  position: absolute;
+  background: url("img/spritesheet.png") no-repeat;
+}
+
+.store-services h2 {
+  font-size: 1.608695em;
+}
+
+.store-services p {
+  font-size: 1em;
+  line-height: 1.071429em;
 }
