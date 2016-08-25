@@ -1,4 +1,63 @@
 @font-face {
+  font-family: 'Rouble';
+  src: url('../fonts/rouble.eot?73134850');
+  src: url('../fonts/rouble.eot?73134850#iefix') format('embedded-opentype'),
+       url('../fonts/rouble.woff2?73134850') format('woff2'),
+       url('../fonts/rouble.woff?73134850') format('woff'),
+       url('../fonts/rouble.ttf?73134850') format('truetype'),
+       url('../fonts/rouble.svg?73134850#rouble') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'rouble';
+    src: url('../font/rouble.svg?73134850#rouble') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "rouble";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-rouble:before { content: '\f158'; } /* '' */s
+
+@font-face {
   font-family: 'Glyphicons Halflings';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -387,6 +446,10 @@
   background: #e86e72;
 }
 
+.products-category {
+  margin-bottom: 43px;
+}
+
 .store-services a,
 .products-category__items a {
   position: absolute;
@@ -500,13 +563,16 @@ h2.store-services__margin-bottom {
   line-height: 2.571428;
   text-align: center;
   background: #fff;
+  color: #484848;
 }
 
 .products-category__title::after {
   content: "";
+  display: block;
   position: relative;
   top: -38px;
-  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
   border-bottom: 1px solid #e0e0e0;
   z-index: 1;
 }
@@ -517,6 +583,8 @@ h2.store-services__margin-bottom {
 
 .category-item .caption {
   padding: 0;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 .category-item .thumbnail {
@@ -530,6 +598,7 @@ h2.store-services__margin-bottom {
 }
 
 .category-item__inner {
+  position: relative;
   border: 2px solid #fff;
   min-height: 284px;
 }
@@ -538,11 +607,217 @@ h2.store-services__margin-bottom {
   display: block;
   margin-right: auto;
   margin-left: auto;
-
 }
 
-.category-item h3 {
+.category-item__title {
   text-align: center;
   font-size: 1.785714em;
   line-height: 1.2em;
+}
+
+.special-offers__list-tabs {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  border-bottom: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.608695em;
+  background: #fff;
+}
+
+.special-offers__tabs::after {
+  content: "";
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: -27px;
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1;
+}
+
+.special-offers__list-tabs a {
+  color: #999;
+}
+
+.special-offers__tab-active a{
+  color: #484848;
+}
+
+.special-offers__list-tabs>li>a {
+  border:none;
+  background: #fff;
+}
+
+.special-offers__list-tabs>li>a:active {
+  border:none;
+  color: #484848;
+  background: #fff;
+}
+
+.special-offers__list-tabs>li>a:focus {
+  border:none;
+  background: #fff;
+}
+
+.special-offers__list-tabs>li>a:hover {
+  border:none;
+  color: #484848;
+  background: #fff;
+}
+
+.special-offers__list-tabs>li.special-offers__tab-active>a,
+.special-offers__list-tabs>li.special-offers__tab-active>a:hover,
+.special-offers__list-tabs>li.special-offers__tab-active>a:active,
+.special-offers__list-tabs>li.special-offers__tab-active>a:focus {
+  border: none;
+}
+
+.product-item {
+  padding: 0px;
+  border-bottom: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.product-item__inner {
+  padding: 15px;
+}
+
+.product-item__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.product-item .product-item__caption {
+  padding: 0;
+}
+
+.product-item__title {
+  position: relative;
+  margin-top: 0;
+  font-size: 1.785714em;
+  line-height: 1.2em;
+  color: #ee6f74;
+}
+
+.product-item__link-title {
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 15em;
+  left: 30px;
+  top: 0px;
+}
+
+.product-item__category-title {
+  text-transform: uppercase;
+  font-size: 0.714286em;
+  line-height: 0.857143em;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.product-item__caption-paragraph {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 1em;
+  line-height: 1.714286;
+  color: #000;
+}
+
+.product-item__caption-list {
+  margin-bottom: 0;
+  padding-left: 25px;
+  list-style: none;
+  font-size: 1em;
+  line-height: 1.714286;
+  color: #000;
+}
+
+.product-item__caption-list li {
+  position: relative;
+}
+
+.product-item__caption li::before {
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  display: block;
+  content: "\e013";
+  top: 0.5em;
+  left: -20px;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  z-index: 2;
+}
+
+.product-item__add-cart {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-item__price {
+  float: left;
+  padding: 0.7em 10px 0 15px;
+  width: 50%;
+  font-size: 1.142857em;
+  line-height: 1.285714em;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.product-item__btn-inner {
+  float: right;
+  width: 50%;
+}
+
+.product-item__price-currency {
+  font-size: 0.93em;
+}
+
+.product-item__btn-cart {
+  position: relative;
+  padding-left: 13px;
+  padding-top: 0.9em;
+  padding-bottom: 1em;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  font-size: 0.857142em;
+  background: #51b95a;
+}
+
+.product-item__btn-cart:hover {
+  background: #26a831;
+}
+
+.product-item__btn-cart::before {
+  padding-right: 15px;
+  font-family: "Glyphicons Halflings";
+  content: "\e116";
+  color: #fff;
+  top: 0;
+  left: 0;
 }
