@@ -820,12 +820,42 @@ h2.store-services__margin-bottom {
 
 .product-item__price {
   float: left;
-  padding: 0.7em 10px 0 15px;
   width: 50%;
   font-size: 1.142857em;
   line-height: 1.285714em;
   text-align: center;
-  border-right: 1px solid #ddd;
+}
+
+.product-item__price p {
+  position: relative;
+  margin-bottom: 0;
+  padding: 1.4em 10px 0 15px;
+}
+
+.product-item__price-currency {
+  font-size: 0.93em;
+}
+
+.product-item__old-price {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  text-decoration: line-through;
+  color: #b34a4a;
+  font-size: 0.8em;
+}
+
+.product-item__old-price .product-item__price-currency {
+  color: #b34a4a;
+}
+
+.product-item__btn-cart::before {
+  padding-right: 15px;
+  font-family: "Glyphicons Halflings";
+  content: "\e116";
+  color: #fff;
+  top: 0;
+  left: 0;
 }
 
 .product-item__btn-inner {
@@ -833,15 +863,11 @@ h2.store-services__margin-bottom {
   width: 50%;
 }
 
-.product-item__price-currency {
-  font-size: 0.93em;
-}
-
 .product-item__btn-cart {
   position: relative;
   padding-left: 13px;
-  padding-top: 0.9em;
-  padding-bottom: 1.1em;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
   width: 100%;
   height: 100%;
   display: block;
@@ -858,13 +884,4 @@ h2.store-services__margin-bottom {
 
 .product-item__btn-cart:hover {
   background: #26a831;
-}
-
-.product-item__btn-cart::before {
-  padding-right: 15px;
-  font-family: "Glyphicons Halflings";
-  content: "\e116";
-  color: #fff;
-  top: 0;
-  left: 0;
 }
