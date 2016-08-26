@@ -885,3 +885,40 @@ h2.store-services__margin-bottom {
 .product-item__btn-cart:hover {
   background: #26a831;
 }
+
+.items-pagination__inner {
+  text-align: center;
+}
+
+
+.items-pagination .pagination{
+  margin-top: -28px;
+}
+
+.items-pagination .pagination-lg>li:last-child>a,
+.items-pagination .pagination-lg>li:last-child>span,
+.items-pagination .pagination-lg>li:first-child>span,
+.items-pagination .pagination-lg>li:first-child>a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+  background: #5d128a;
+  border-color: #5d128a;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #5d128a;
+}
+
+.pagination>li>a:focus, .pagination>li>span:focus  {
+  background: #fff;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+  color: #5d128a;
+}
