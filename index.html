@@ -15,20 +15,21 @@
     <div class="page-header__top-bar">
       <div class="page-header__inner container">
         <div class="row">
-          <div class="page-header__tagline col-lg-7 col-md-6">
+          <div class="page-header__tagline col-lg-9 col-md-6">
             <h1>Сеть магазинов Товаров для здоровья и красоты в Ижевске</h1>
           </div>
-          <div class="page-header__search col-lg-3 col-md-3">
+          <div class="page-header__login col-lg-2 col-md-3">
+            <a href="#">Войти</a>
+            <a href="#">Регистрация</a>
+          </div>
+          <div class="page-header__search col-lg-1 col-md-3">
+            <a href="#" title="Поиск по сайту">Поиск</a>
             <form action="#" class="page-search form-horizontal" method="get" role="search">
               <div class="form-group-sm">
                 <label for="page-input-search"></label>
                 <input type="text" name="page-search" id="page-input-search" placeholder="Поиск">
               </div>
             </form>
-          </div>
-          <div class="page-header__login col-lg-2 col-md-3">
-            <a href="#">Войти</a>
-            <a href="#">Регистрация</a>
           </div>
         </div>
       </div>
@@ -59,42 +60,50 @@
               <li><span>8 912</span> 753-55-12</li>
             </ul>
           </div>
-          <div class="page-basket col-lg-2 col-md-2">
-            <a href="#" class="page-basket__btn btn btn-sm btn-success">
+          <div class="ask-question col-lg-2 col-md-2">
+            <a href="#" class="ask-question__btn btn btn-success">
               Закажите бесплатную<br>
               консультацию
             </a>
-            <a href="#" class="page-basket__total-price-btn btn btn-sm btn-default">
+            <!-- <a href="#" class="page-basket__total-price-btn btn btn-sm btn-default">
               250 600 р
               <i class="page-basket__ammount">5</i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </div>
     <div class="page-header__nav-wrap container">
-      <nav class="main-nav navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Меню</a>
+      <div class="row">
+        <nav class="main-nav navbar navbar-default col-lg-10" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Меню</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="main-nav__list nav navbar-nav">
+                <li class="main-nav__active-item active"><a href="#">Продукция</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Консультация</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Как купить</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="main-nav__list nav navbar-nav">
-              <li class="main-nav__active-item active"><a href="#">Продукция</a></li>
-              <li><a href="#">О компании</a></li>
-              <li><a href="#">Консультация</a></li>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">Как купить</a></li>
-            </ul>
-          </div>
+        </nav>
+        <div class="page-basket col-lg-2">
+          <a href="#" class="page-basket__total-price-btn btn btn-sm btn-default">
+            250 600 р
+            <i class="page-basket__ammount">5</i>
+          </a>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
   <main class="page-content">
