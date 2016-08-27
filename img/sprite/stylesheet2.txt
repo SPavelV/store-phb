@@ -1,0 +1,107 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 54px;
+    height: 54px;
+    background-position: -5px -5px;
+}
+
+.sprite-call-out {
+    width: 16px;
+    height: 16px;
+    background-position: -69px -5px;
+}
+
+.sprite-case {
+    width: 38px;
+    height: 36px;
+    background-position: -95px -5px;
+}
+
+.sprite-certification {
+    width: 45px;
+    height: 45px;
+    background-position: -143px -5px;
+}
+
+.sprite-consultant {
+    width: 47px;
+    height: 60px;
+    background-position: -198px -5px;
+}
+
+.sprite-delivery {
+    width: 65px;
+    height: 55px;
+    background-position: -255px -5px;
+}
+
+.sprite-family {
+    width: 31px;
+    height: 41px;
+    background-position: -330px -5px;
+}
+
+.sprite-gift {
+    width: 51px;
+    height: 51px;
+    background-position: -371px -5px;
+}
+
+.sprite-giftbox {
+    width: 40px;
+    height: 40px;
+    background-position: -432px -5px;
+}
+
+.sprite-house {
+    width: 16px;
+    height: 16px;
+    background-position: -482px -5px;
+}
+
+.sprite-mail {
+    width: 50px;
+    height: 44px;
+    background-position: -508px -5px;
+}
+
+.sprite-payment {
+    width: 55px;
+    height: 55px;
+    background-position: -568px -5px;
+}
+
+.sprite-phone {
+    width: 48px;
+    height: 44px;
+    background-position: -633px -5px;
+}
+
+.sprite-phone-ic {
+    width: 29px;
+    height: 58px;
+    background-position: -691px -5px;
+}
+
+.sprite-placeholder {
+    width: 31px;
+    height: 47px;
+    background-position: -730px -5px;
+}
+
+.sprite-return {
+    width: 54px;
+    height: 55px;
+    background-position: -771px -5px;
+}
+
+.sprite-shipping {
+    width: 45px;
+    height: 32px;
+    background-position: -835px -5px;
+}
