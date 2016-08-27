@@ -61,7 +61,10 @@
   font-family: 'Glyphicons Halflings';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 .main-page .page-header {
@@ -301,7 +304,7 @@
 
  .page-basket .btn-default:focus {
   background: #fff;
-  border-color: none;
+  border-color: #adadad;
 }
 
 .page-basket .btn-default:active {
@@ -407,12 +410,12 @@
 
 .page-slider__caption h3 {
   font-size: 2.142em;
-  color: #3c1b5f;s
+  color: #3c1b5f;
   text-transform: uppercase;
 }
 
 .page-slider__caption p {
-  font-size: 0.92857;
+  font-size: 0.92857em;
   color: #5d128a;
   font-style: italic;
 }
@@ -675,7 +678,6 @@ h2.store-services__margin-bottom {
   border-bottom: none;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: ;
   font-size: 1.608695em;
   background: #fff;
 }
@@ -1007,7 +1009,114 @@ h2.store-services__margin-bottom {
   background: #f4f4f4;
 }
 
+.show-more .show-more__btn:focus {
+  background: #f4f4f4;
+}
+
+.show-more .show-more__btn:hover {
+  background: #e6e6e6;
+}
+
 .show-more__btn .caret {
   margin-left: 15px;
   margin-right: 10px;
+}
+
+.special-offers {
+  margin-bottom: 27px;
+}
+
+.service-description__title h2 {
+  position: relative;
+  z-index: 2;
+  display: inline;
+  margin: 0;
+  padding: 0 43px;
+  font-size: 2.142857em;
+  line-height: 2.571428;
+  text-align: center;
+  background: #fff;
+  color: #484848;
+}
+
+.service-description__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1;
+}
+
+.service-description__items+.service-description__items{
+  margin-bottom: 19px;
+}
+
+.service-description__items {
+  margin-bottom: s;
+}
+
+.service-description__item h3 {
+  position: relative;
+  padding-top: 90px;
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.service-description__item h3::before {
+  position: absolute;
+  content: "";
+  background: url("../img/spritesheet1.png") no-repeat;
+  left: 50%;
+}
+
+h3.sprite-payment::before {
+    width: 55px;
+    height: 55px;
+    background-position: -507px -5px;
+    top: 0;
+    margin-left: -27.5px;
+}
+
+h3.sprite-delivery::before {
+    width: 65px;
+    height: 55px;
+    background-position: -255px -5px;
+    top: 0;
+    margin-left: -35px;
+}
+
+h3.sprite-return::before {
+    width: 54px;
+    height: 55px;
+    background-position: -710px -5px;
+    top: 0;
+    margin-left: -30px;
+}
+
+h3.sprite-consultant::before {
+    width: 47px;
+    height: 60px;
+    background-position: -198px -5px;
+    top: 0;
+    margin-left: -23.5px;
+}
+
+h3.sprite-calendar::before {
+    width: 54px;
+    height: 54px;
+    background-position: -5px -5px;
+    top: 0;
+    margin-left: -27px;
+}
+
+.service-description__item p {
+  font-size: 0.928571em;
+  line-height: 1.571429;
+  color: #4d4d4d;
 }
