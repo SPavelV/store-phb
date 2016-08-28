@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <title>Товары для здоровья и красоты в Ижевске</title>
 </head>
 <body class="main-page">
@@ -25,9 +25,9 @@
           <div class="page-header__search col-lg-1 col-md-3">
             <a href="#" title="Поиск по сайту">Поиск</a>
             <form action="#" class="page-search form-horizontal" method="get" role="search">
-              <div class="form-group-sm">
+              <div class="form-group-lg">
                 <label for="page-input-search"></label>
-                <input type="text" name="page-search" id="page-input-search" placeholder="Поиск">
+                <input type="text" name="page-search" id="page-input-search" placeholder="Поиск" class="form-control input-lg">
               </div>
             </form>
           </div>
@@ -39,10 +39,10 @@
         <div class="row">
           <div class="page-header__logo-inner col-lg-4 col-md-3">
             <a href="#" class="page-header__logo-link">
-              <img src="img/logo.png" alt="Товары для здоровья и красоты">
+              <img src="img/logo-big.png" alt="Товары для здоровья и красоты">
             </a>
           </div>
-          <div class="page-contact col-lg-3 col-md-3">
+          <div class="page-contact col-lg-3 col-md-3 col-xs-6">
             <p class="page-contact__address">
               г. Ижевск, ул. 7-я Подлесная, 97
             </p>
@@ -51,7 +51,7 @@
               <li><span>Сб, Вс:</span> выходной</li>
             </ul>
           </div>
-          <div class="page-phone col-lg-3 col-md-3">
+          <div class="page-phone col-lg-3 col-md-3 col-xs-6">
             <p class="page-phone__title">
               Сделайте заказ по телефону
             </p>
@@ -84,7 +84,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Меню</a>
+              <!-- <a class="navbar-brand" href="#">Меню</a> -->
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="main-nav__list nav navbar-nav">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </nav>
-        <div class="page-basket col-lg-2">
+        <div class="page-basket col-lg-2 col-md-12 col-sm-12">
           <a href="#" class="page-basket__total-price-btn btn btn-sm btn-default">
             250 600 р
             <i class="page-basket__ammount">5</i>
@@ -136,7 +136,7 @@
           </div>
           <div class="item">
             <img src="img/slide2.jpg" alt="Развела руками">
-            <div class="page-slider__caption carousel-caption  col-lg-12 col-md-12 col-sm-12">
+            <div class="page-slider__caption carousel-caption col-lg-12 col-md-12 col-sm-12">
               <h3>Спецпредложение</h3>
               <p class="page-slider__special-offers">
                 Лечение головных болей, болей в спине, в шее, в суставах, в животе, в мочеполовой системе, в ногах, от простудных заболеваний
@@ -592,7 +592,7 @@
     </div>
     <div class="service-description container">
       <div class="service-description__title text-center row">
-        <div class="col lg-12">
+        <div class="col-lg-12">
           <h2>Как купить</h2>
         </div>
       </div>
@@ -633,7 +633,7 @@
         </div>
       </div>
       <div class="service-description__items row">
-        <div class="service-description__item col-lg-6 com-md-4">
+        <div class="service-description__item col-lg-6 com-md-6 col-sm-6">
           <h3 class="text-center sprite-consultant">Консультация</h3>
           <p class="text-center">
             Мы предлагаем вам бесплатно проконсультироваться со специалистом
@@ -643,7 +643,7 @@
             Вы сможете снять боль, напряженность, усталость, применив различный массаж
           </p>
         </div>
-        <div class="service-description__item col-lg-6 com-md-4">
+        <div class="service-description__item col-lg-6 com-md-6 col-sm-6">
           <h3 class="text-center sprite-calendar">Тестирование</h3>
           <p class="text-center">
             Мы предоставляем возможность посетителям нашего магазина бесплатно пройти
@@ -658,13 +658,13 @@
     <div class="form-application">
       <div class="form-application__wrap container">
         <div class="row">
-          <div class="form-application__description col-lg-6">
+          <div class="form-application__description col-lg-6 col-md-6 col-sm-12">
             <p>
               <b>Оставьте заявку сейчас</b>, и получите бесплатно
               консультацию или 10 сеансов, мы перезвоним Вам
             </p>
           </div>
-          <form class="form-inline col-lg-6">
+          <form class="form-inline col-lg-6 col-md-6 col-sm-12">
             <div class="form-group">
               <label for="exampleInputName2"></label>
               <input type="text" class="form-control" id="exampleInputName2" placeholder="Имя*">
@@ -675,6 +675,76 @@
             </div>
             <button type="submit" class="btn btn-danger">Отправить</button>
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="about-company container">
+      <div class="about-company__inner row text-center">
+        <div class="about-company__title col-lg-12">
+          <h2>O компании</h2>
+        </div>
+      </div>
+      <div class="about-company__inner row">
+        <div class="about-company__logo col-lg-3">
+          <img src="img/logo-big.png" alt="Товары для здоровья и красоты">
+        </div>
+        <div class="about-company__description col-lg-6">
+          <p>
+            Магазин «Товары для Здоровья и Красоты» находится в Ижевске с 2010 г. Является официальным представителем компании Лотос, который  успешно работает на российском рынке <b>уже более 15 лет!</b> Миссия компании состоит в разработке и производстве качественного терапевтического оборудования по доступным ценам, используя новейшие технологии.
+          </p>
+          <p>
+            Наши покупатели получают максимальные результаты и в оздоровлении
+              и омоложении своего организма, что оправдывает все вложенные средства. Качество продукции начинается на этапе проектирования.
+          </p>
+          <p>
+            Компания получает все комплектующие
+            от лучших поставщиков и проверяет все компоненты перед установкой.
+            Все оборудование проходит контроль качества до упаковки и отгрузки. Постоянная обратная связь
+            с покупателями позворляет разрабатывать и обновлять ассортимент по вашим требованиям и пожеланиям.
+          </p>
+          <div class="about-company__btn-inner text-center">
+            <a href="#" class="btn btn-default about-company__btn">Читать подробнее</a>
+          </div>
+        </div>
+        <div class="about-company__social col-lg-3">
+          <p>Cмотрите нас в соцсетях</p>
+          <div class="about-company__social-inner">
+            <a href="#" class="icon-facebook"></a>
+            <a href="#" class="icon-twitter"></a>
+            <a href="#" class="icon-vkontakte"></a>
+            <a href="#" class="icon-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="about-company__video row">
+        <div class="video-inner col-lg-12">
+          <img src="img/video.jpg" alt="Промо видео">
+        </div>
+      </div>
+    </div>
+    <div class="company-contact">
+      <div class="container">
+        <div class="row">
+          <div class="company-contact__phone col-lg-4 col-md-4">
+            <p class="sprite-phone-ic">Позвоните нам</p>
+            <ul>
+              <li>8 912 763-41-20</li>
+              <li>8 912 753-55-12</li>
+            </ul>
+          </div>
+          <div class="company-contact__address col-lg-4 col-md-4">
+            <p class="sprite-placeholder">Адрес</p>
+            <p>
+              Ижевск, ул. 7-я Подлесная, 97<br>
+              Пн-Пт: 10:00 — 19:00, Сб, Вс: выходной
+            </p>
+          </div>
+          <div class="company-contact__email col-lg-4 col-md-4">
+            <p class="sprite-mail">E-Mail</p>
+            <p>
+              <a href="mailto:snejana-rus@mail.ru">snejana-rus@mail.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
