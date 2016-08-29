@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-letter {
+    width: 49px;
+    height: 36px;
+    background-position: -5px -5px;
+}
+
+.sprite-place1 {
+    width: 37px;
+    height: 52px;
+    background-position: -64px -5px;
+}
+
+.sprite-smartphone {
+    width: 37px;
+    height: 59px;
+    background-position: -111px -5px;
+}
+
+.sprite-ugift2 {
+    width: 27px;
+    height: 27px;
+    background-position: -158px -5px;
+}
+
+.sprite-xlock {
+    width: 8px;
+    height: 10px;
+    background-position: -195px -5px;
+}
