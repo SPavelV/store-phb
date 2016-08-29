@@ -72,6 +72,10 @@
 .icon-vkontakte:before { content: '\f189'; } /* '' */
 .icon-linkedin-squared:before { content: '\f30c'; } /* '' */
 
+.main-page {
+  position: relative;
+}
+
 .main-page .page-header {
   margin: 0;
   padding: 0;
@@ -402,23 +406,51 @@
   margin-bottom: 60px;
 }
 
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
 .page-slider__caption {
-  top: 30px;
+  top: 15px;
   padding-left: 40px;
   text-align: left;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.6);
 }
 
 .page-slider__caption h3 {
+  margin-top: 10;
   font-size: 2.142em;
   color: #3c1b5f;
   text-transform: uppercase;
 }
 
-.page-slider__caption p {
-  font-size: 0.92857em;
+.page-slider__preview {
+  font-size: 1em;
   color: #5d128a;
   font-style: italic;
+}
+
+.page-slider__special-offers {
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 1.8em;
+  color: #3c1b5f;
+  text-transform: uppercase;;
+}
+
+.page-slider__list-inner .left-col {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+}
+
+.page-slider__list-inner .right-col {
+  float: left;
+  width: 300px;
 }
 
 .page-slider__list {
@@ -450,7 +482,7 @@
 
 .page-slider__btn-catalog,
 .page-slider__btn-catalog:focus {
-  background: #4d4d4d;
+  background: #51b95a;
   color: #fff;
   font-size: 1.42857em;
   -webkit-border-radius: 0;
@@ -461,7 +493,7 @@
   border: 0;
 }
 
-.page-slider__btn-catalog:hover {
+/*.page-slider__btn-catalog:hover {
   background: #2e1738;
   color: #fff;
 }
@@ -469,7 +501,7 @@
 .page-slider__btn-catatlog:active {
   background: #242222;
   color: #fff;
-}
+}*/
 
 .store-services {
   margin-bottom: 43px;
@@ -610,14 +642,18 @@ h2.store-services__margin-bottom {
   margin-top: -22px;
 }
 
+.products-category__title {
+  margin-bottom: 30px;
+}
+
 .products-category__title h2 {
   position: relative;
   z-index: 2;
   display: inline;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0 43px;
-  font-size: 2.142857em;
-  line-height: 2.571428;
+  font-size: 1.608695em;
   text-align: center;
   background: #fff;
   color: #484848;
@@ -627,7 +663,7 @@ h2.store-services__margin-bottom {
   content: "";
   display: block;
   position: relative;
-  top: -38px;
+  top: -15px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #e0e0e0;
@@ -1024,7 +1060,11 @@ h2.store-services__margin-bottom {
 }
 
 .special-offers {
-  margin-bottom: 27px;
+  margin-bottom: 60px;
+}
+
+.service-description__title {
+  margin-bottom: 28px;
 }
 
 .service-description__title h2 {
@@ -1033,8 +1073,7 @@ h2.store-services__margin-bottom {
   display: inline;
   margin: 0;
   padding: 0 43px;
-  font-size: 2.142857em;
-  line-height: 2.571428;
+  font-size: 1.608695em;
   text-align: center;
   background: #fff;
   color: #484848;
@@ -1044,7 +1083,7 @@ h2.store-services__margin-bottom {
   content: "";
   display: block;
   position: relative;
-  top: -35px;
+  top: -15px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #e0e0e0;
@@ -1057,6 +1096,10 @@ h2.store-services__margin-bottom {
 
 .service-description__items {
   margin-bottom: 58px;
+}
+
+.service-description__item {
+  position: relative;
 }
 
 .service-description__item h3 {
@@ -1122,6 +1165,15 @@ h3.sprite-calendar::before {
   font-size: 0.928571em;
   line-height: 1.571429;
   color: #4d4d4d;
+}
+
+.service-description__item a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .form-application {
@@ -1191,14 +1243,17 @@ h3.sprite-calendar::before {
   margin-bottom: 35px;
 }
 
+.about-company__title {
+  margin-bottom: 20px;
+}
+
 .about-company__title h2 {
   position: relative;
   z-index: 2;
   display: inline;
   margin: 0;
   padding: 0 43px;
-  font-size: 2.142857em;
-  line-height: 2.571428;
+  font-size: 1.608695em;
   text-align: center;
   background: #fff;
   color: #484848;
@@ -1208,7 +1263,7 @@ h3.sprite-calendar::before {
   content: "";
   display: block;
   position: relative;
-  top: -35px;
+  top: -15px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #e0e0e0;
@@ -1424,7 +1479,7 @@ h3.sprite-calendar::before {
 }
 
 .company-contact__map {
-  margin-bottom: 40px;
+  margin-bottom: px;
 }
 
 .company-contact__map img {
@@ -1742,8 +1797,10 @@ h3.sprite-calendar::before {
     margin-right: 15px;
     font-size: 1.2em;
   }
-  .about-company__logo {
-    width: 100%;
+  .about-company__logo img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .company-contact__phone ul {
     margin-bottom: 30px;
@@ -1752,5 +1809,49 @@ h3.sprite-calendar::before {
     text-align: center;
     margin-left: 0;
   }
+  .page-footer__inner .row:first-child {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  .page-footer__contact,
+  .page-footer__category,
+  .page-footer__support,
+  .page-footer__account,
+  .page-footer__more {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .page-footer__more .about-company__social-inner {
+    margin-top: 70px;
+  }
+  .page-footer__copyright p{
+    text-align: center;
+  }
+  .page-footer__menu ul {
+    text-align: center;
+  }
+}
 
+@media all and (max-width: 540px) {
+  .product-item {
+    margin-bottom: 20px;
+  }
+  .show-more__inner-btn {
+    margin-top: 40px;
+  }
+  .special-offers__list-tabs {
+  }
+  .special-offers__list-tabs li{
+    float: none;
+  }
+}
+
+@media all and (max-width: 172px) {
+  .service-description__title h2 {
+    padding: 0 10px;
+  }
+  .service-description__title::after {
+    top: -25px;
+  }
 }

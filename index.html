@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Товары для здоровья и красоты в Ижевске</title>
 </head>
-<body class="main-page">
+<body class="main-page" data-spy="scroll" data-target=".main-nav__list">
   <header class="page-header">
     <div class="page-header__top-bar">
       <div class="page-header__inner container">
@@ -48,8 +48,8 @@
               г. Ижевск, ул. 7-я Подлесная, 97
             </p>
             <ul class="page-contact__mode list-unstyled">
-              <li><span>Пн-Пт:</span> 10:00 — 19:00</li>
-              <li><span>Сб, Вс:</span> выходной</li>
+              <li>Пн-Пт: 10:00 — 19:00</li>
+              <li>Сб, Вс: выходной</li>
             </ul>
           </div>
           <div class="page-phone col-lg-3 col-md-3 col-xs-6">
@@ -89,18 +89,18 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="main-nav__list nav navbar-nav">
-                <li class="main-nav__active-item active"><a href="#">Продукция</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Консультация</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Как купить</a></li>
+                <li class="main-nav__active-item active"><a href="#products" data-offset="50px">Продукция</a></li>
+                <li><a href="#company">О компании</a></li>
+                <li><a href="#advice">Консультация</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#payment">Как купить</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <div class="page-basket col-lg-2 col-md-12 col-sm-12">
           <a href="#" class="page-basket__total-price-btn btn btn-sm btn-default">
-            250 600 р
+            250 600<i class="icon-rouble"></i>
             <i class="page-basket__ammount">5</i>
           </a>
         </div>
@@ -120,35 +120,57 @@
           <div class="item active">
             <img src="img/slide1.jpg" alt="Развела руками">
             <div class="page-slider__caption carousel-caption">
-              <h3>Спецпредложение</h3>
               <p class="page-slider__special-offers">
                 Пройдите 10 бесплатных
                 сеансов на нашем
                 оборудовании
               </p>
-              <ul class="page-slider__list">
-                <li>Массажное оборудование</li>
-                <li>Тепловые матрасы</li>
-                <li>Аппараты для коррекции веса</li>
-                <li>Прессотерапия</li>
-              </ul>
-              <a href="#" class="page-slider__btn-catalog btn btn-default">Перейти в каталог</a>
+              <p class="page-slider__preview">
+                <i>Лечение головных болей, болей в спине, в шее, в суставах, в животе, в мочеполовой<br> системе, в ногах, от простудных заболеваний</i>
+              </p>
+              <div class="page-slider__list-inner clearfix">
+                <ul class="page-slider__list left-col">
+                  <li>Массажное оборудование</li>
+                  <li>Тепловые матрасы</li>
+                  <li>Аппараты для коррекции веса</li>
+                  <li>Прессотерапия</li>
+                </ul>
+                <ul class="page-slider__list right-col">
+                  <li>Аппараты для оздоровления кожи</li>
+                  <li>Турмалиновая продукция</li>
+                  <li>Товары для дома</li>
+                  <li>Фильтры для воды</li>
+                </ul>
+              </div>
+              <a href="#" class="page-slider__btn-catalog btn btn-success">Перейти в каталог</a>
             </div>
           </div>
           <div class="item">
             <img src="img/slide2.jpg" alt="Развела руками">
-            <div class="page-slider__caption carousel-caption col-lg-12 col-md-12 col-sm-12">
-              <h3>Спецпредложение</h3>
+            <div class="page-slider__caption carousel-caption">
               <p class="page-slider__special-offers">
-                Лечение головных болей, болей в спине, в шее, в суставах, в животе, в мочеполовой системе, в ногах, от простудных заболеваний
+                Пройдите 10 бесплатных
+                сеансов на нашем
+                оборудовании
               </p>
-              <ul class="page-slider__list">
-                <li>Аппараты для оздоровления кожи</li>
-                <li>Турмалиновая продукция</li>
-                <li>Товары для дома</li>
-                <li>Фильтры для воды</li>
-              </ul>
-              <a href="#" class="page-slider__btn-catalog btn btn-default">Перейти в каталог</a>
+              <p class="page-slider__preview">
+                <i>Лечение головных болей, болей в спине, в шее, в суставах, в животе, в мочеполовой<br> системе, в ногах, от простудных заболеваний</i>
+              </p>
+              <div class="page-slider__list-inner clearfix">
+                <ul class="page-slider__list left-col">
+                  <li>Массажное оборудование</li>
+                  <li>Тепловые матрасы</li>
+                  <li>Аппараты для коррекции веса</li>
+                  <li>Прессотерапия</li>
+                </ul>
+                <ul class="page-slider__list right-col">
+                  <li>Аппараты для оздоровления кожи</li>
+                  <li>Турмалиновая продукция</li>
+                  <li>Товары для дома</li>
+                  <li>Фильтры для воды</li>
+                </ul>
+              </div>
+              <a href="#" class="page-slider__btn-catalog btn btn-success">Перейти в каталог</a>
             </div>
           </div>
         </div>
@@ -216,7 +238,7 @@
         </ul>
       </div>
     </div>
-    <div class="products-category container">
+    <div class="products-category container" id="products" data-offset="50px">
       <div class="products-category__title text-center row">
         <div class="col-lg-12">
           <h2>Продукция</h2>
@@ -597,7 +619,7 @@
           <h2>Как купить</h2>
         </div>
       </div>
-      <div class="service-description__items row">
+      <div class="service-description__items row" id="payment">
         <div class="service-description__item col-lg-4 col-md-4">
           <h3 class="text-center sprite-payment">Оплата</h3>
           <p class="text-center">
@@ -607,6 +629,7 @@
             перевод через банк, оплата кредитной картой
             MasterCard и Visa, рассрочка и формление в кредит
           </p>
+          <a href="#"></a>
         </div>
         <div class="service-description__item co l-lg-4 col-md-4">
           <h3 class="text-center sprite-delivery">Доставка</h3>
@@ -616,6 +639,7 @@
             кампаниями. При покупке мелкой продукции
             покупатели сами забирают товар из магазина-салона
           </p>
+          <a href="#"></a>
         </div>
         <div class="service-description__item col-lg-4 col-md-4">
           <h3 class="text-center sprite-return">Гарантия</h3>
@@ -626,9 +650,10 @@
             на гарантийном талоне в инструкции товаров.
             При обнаружении дефекта товара заменим в течение 7 дней
           </p>
+          <a href="#"></a>
         </div>
       </div>
-      <div class="service-description__title text-center row">
+      <div class="service-description__title text-center row" id="advice">
         <div class="col lg-12">
           <h2>Консультации и тестирование</h2>
         </div>
@@ -643,6 +668,7 @@
             и подберет вам соответствующее оборудование для оздоровления и профилактики.
             Вы сможете снять боль, напряженность, усталость, применив различный массаж
           </p>
+          <a href="#"></a>
         </div>
         <div class="service-description__item col-lg-6 com-md-6 col-sm-6">
           <h3 class="text-center sprite-calendar">Тестирование</h3>
@@ -652,7 +678,8 @@
             Записаться на тестирование можно, заполнив форму ниже, позвонив по указанным
             телефонам, или самостоятельно записаться в личном кабинете. После пройденного
             бесплатного курса многие посетители получают положительные хорошие результаты
-          </pclass>
+          </p>
+          <a href="#"></a>
         </div>
       </div>
     </div>
@@ -679,7 +706,7 @@
         </div>
       </div>
     </div>
-    <div class="about-company container">
+    <div class="about-company container" id="company">
       <div class="about-company__inner row text-center">
         <div class="about-company__title col-lg-12">
           <h2>O компании</h2>
@@ -723,7 +750,7 @@
         </div>
       </div>
     </div>
-    <div class="company-contact">
+    <div class="company-contact" id="contacts">
       <div class="container">
         <div class="row">
           <div class="company-contact__phone col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -748,7 +775,7 @@
           </div>
         </div>
       </div>
-      <div class="company-contact__map">
+      <div class="company-contact__map visible-lg visible-md">
         <div class="company-contact__inner">
           <img src="img/map.jpg" alt="Схема расположения офиса компании">
         </div>
