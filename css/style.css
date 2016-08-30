@@ -270,15 +270,11 @@
   margin-top: 10px;
   margin-left: 0px;
   margin-bottom: 15px;
-  /*padding-left: 20px;
-  padding-right: 20px;*/
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
   border-radius: 0px;
-  /*font-size: 0.85em;
-  line-height: 1.1em; /*0.85+30%*/*/
 }
 
 .page-basket {
@@ -412,7 +408,8 @@
 }
 
 .page-slider__caption {
-  top: 15px;
+  top: 5px;
+
   padding-left: 40px;
   text-align: left;
   background: rgba(255,255,255,.6);
@@ -482,7 +479,10 @@
 
 .page-slider__btn-catalog,
 .page-slider__btn-catalog:focus {
-  background: #51b95a;
+  position: relative;
+  padding-left: 43px;
+  padding-right: 67px;
+  background: #26a830;
   color: #fff;
   font-size: 1.42857em;
   -webkit-border-radius: 0;
@@ -490,7 +490,18 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  border: 0;
+  border: 1px solid #239b2c;
+}
+
+.page-slider__btn-catalog::after {
+  position: absolute;
+  content: "";
+  background:  url("../img/spritesheet3.png") no-repeat;
+  width: 17px;
+  height: 5px;
+  background-position: -649px -5px;
+  top: 19px;
+  right: 45px;
 }
 
 /*.page-slider__btn-catalog:hover {
@@ -1544,52 +1555,6 @@ h3.sprite-calendar::before {
   width: 100%;
 }
 
-@media all and (max-width: 1200px) {
-  .about-company__logo img {
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-bottom: 20px;
-  }
-  .page-basket {
-    text-align: center;
-  }
-  .form-group {
-    margin-top: 0;;
-  }
-  .form-application__description p {
-    font-size: 1em;
-    margin-top: 35px;
-  }
-  .form-inline {
-    text-align: center;
-  }
-  .form-inline .btn-danger {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 15px;
-  }
-  .about-company__social {
-    margin-bottom: 30px;
-  }
-  .about-company__social {
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-company__social-inner {
-    text-align: center;
-  }
-  .company-contact__address p:last-child {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-.page-footer {
-  background: #fcfbfb;
-  border-top: 1px solid #f2f1f1;
-}
-
 .page-footer__title {
   margin-bottom: 24px;
   padding-top: 30px;
@@ -1745,7 +1710,7 @@ h3.sprite-calendar::before {
 
 .page-footer__menu li {
   position: relative;
-  display: inline-block;t
+  display: inline-block;
   vertical-align: top;
   padding-right: 8px;
 }
@@ -1768,6 +1733,70 @@ h3.sprite-calendar::before {
 .page-footer__menu,
 .page-footer__copyright {
   padding-bottom: 10px;
+}
+
+@media all and (max-width: 1200px) {
+  .about-company__logo img {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 20px;
+  }
+  .page-basket {
+    text-align: center;
+  }
+  .page-slider__special-offers {
+    font-size: 1.1em;
+    padding: 4px;
+  }
+  .page-slider__list li{
+    padding: 0;
+    font-size: 0.9em;
+    line-height: 1em;
+  }
+  .form-group {
+    margin-top: 0;;
+  }
+  .form-application__description p {
+    font-size: 1em;
+    margin-top: 35px;
+  }
+  .form-inline {
+    text-align: center;
+  }
+  .form-inline .btn-danger {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+  .about-company__social {
+    margin-bottom: 30px;
+  }
+  .about-company__social {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-company__social-inner {
+    text-align: center;
+  }
+  .company-contact__address p:last-child {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1870px) {
+  .page-slider__special-offers {
+    margin-top: -13px;
+    font-size: 1.2em;
+    padding: 4px;
+  }
+  .page-slider__list li{
+    padding: 0;
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
 }
 
 @media all and (max-width: 992px){
@@ -1829,7 +1858,6 @@ h3.sprite-calendar::before {
     text-align: center;
   }
 }
-
 
 @media all and (max-width: 768px) {
   .page-header__search .page-search {
